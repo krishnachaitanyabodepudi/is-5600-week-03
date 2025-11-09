@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Chat App</title>
-  <link rel="stylesheet" href="/tachyons.min.css">
-  <link rel="stylesheet" href="/chat.css">
-  <body>
-    <div id="messages">
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/tachyons.min.css">
+    <link rel="stylesheet" href="/chat.css">
+  </head>
+  <body class="pa4 sans-serif">
+    <div id="messages" class="mb4">
       <h4>Chat Messages</h4>
     </div>
-    <form id="form">
+
+    <form id="form" class="flex">
       <input
-      id="input"
-      type="text"
-      placeholder="Your message...">
-      </form>
-    <script src='/chat.js'></script>
+        id="input"
+        type="text"
+        placeholder="Your message..."
+        class="input-reset ba b--black-20 pa2 mb2 db w-80"
+        required
+      />
+      <button type="submit" class="pa2 bg-blue white b ml2 pointer">Send</button>
+    </form>
+
+    <script src="/chat.js"></script>
   </body>
 </html>
